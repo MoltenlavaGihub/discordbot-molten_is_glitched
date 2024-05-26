@@ -38,9 +38,9 @@ class Utility(commands.Cog):
     async def info(self, ctx):
         embed = nextcord.Embed(title="Bot Information", description="This bot provides various functionalities.", color=0x00ff00)
         embed.add_field(name="Bot Name", value=self.bot.user.name, inline=False)
-        embed.add_field(name="Owner", value="molten_is_glitched", inline=False)  # Replace "Your Name Here" with your name or username
+        embed.add_field(name="Owner", value="OWNER_USERNAME", inline=False)  # Replace "Your Name Here" with your name or username
         embed.add_field(name="Server Count", value=len(self.bot.guilds), inline=False)
-        embed.add_field(name="Bot Invite Link", value= "https://discord.com/oauth2/authorize?client_id=1238801923872784507", inline=False)  # Replace "Your Bot Invite Link Here" with your bot's invite link
+        embed.add_field(name="Bot Invite Link", value= "BOT_INVITE_LINK", inline=False)  # Replace "Your Bot Invite Link Here" with your bot's invite link
         await ctx.send(embed=embed)
     
     @commands.command(name="avatar", description="Get the avatar of a user")
